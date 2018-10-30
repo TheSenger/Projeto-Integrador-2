@@ -189,7 +189,7 @@ public class Tela_Cadastro extends JFrame {
 		//Botao Adicionar Imagem
 		
 		JButton btnAdicionarImagem = new JButton("Adicionar Imagem");
-		btnAdicionarImagem.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		btnAdicionarImagem.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnAdicionarImagem.setBounds(596, 237, 150, 23);
 		contentPane.add(btnAdicionarImagem);
 		
