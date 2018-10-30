@@ -7,6 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import java.awt.Color;
 import java.awt.Font;
@@ -47,6 +48,17 @@ public class Tela_Cadastro extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		
+		ButtonGroup Cor_Pele = new ButtonGroup();
+		ButtonGroup Ocupacao = new ButtonGroup();
+		ButtonGroup Curso = new ButtonGroup();
+		ButtonGroup Periodo = new ButtonGroup();
+		ButtonGroup Tipo_Cabelo = new ButtonGroup();
+		ButtonGroup Cor_Cabelo = new ButtonGroup();
+		ButtonGroup Cor_Olhos = new ButtonGroup();
+		
+		
 		
 		
 		//Label Nome
@@ -151,6 +163,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnBranco.setBounds(129, 126, 109, 23);
 		contentPane.add(rdbtnBranco);
 		
+		Cor_Pele.add(rdbtnBranco);
+		
 				
 		
 		//RadioButton Negro
@@ -160,7 +174,7 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnNegro.setBounds(261, 126, 109, 23);
 		contentPane.add(rdbtnNegro);
 		
-		
+		Cor_Pele.add(rdbtnNegro);
 						
 		//RadioButton Pardo
 		
@@ -169,6 +183,7 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnPardo.setBounds(399, 126, 109, 23);
 		contentPane.add(rdbtnPardo);
 		
+		Cor_Pele.add(rdbtnPardo);
 		
 						
 		//Botao Adicionar Imagem
@@ -187,6 +202,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnSistemas.setBounds(90, 207, 109, 23);
 		contentPane.add(rdbtnSistemas);
 		
+		Curso.add(rdbtnSistemas);
+		
 		
 						
 		//RadioButton Analise
@@ -195,6 +212,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnAnalise.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		rdbtnAnalise.setBounds(227, 207, 109, 23);
 		contentPane.add(rdbtnAnalise);
+		
+		Curso.add(rdbtnAnalise);
 		
 						
 		
@@ -205,6 +224,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnAluno.setBounds(210, 166, 109, 23);
 		contentPane.add(rdbtnAluno);
 		
+		Ocupacao.add(rdbtnAluno);
+		
 						
 		
 		//RadioButton Funcionario
@@ -214,6 +235,7 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnFuncionario.setBounds(341, 166, 109, 23);
 		contentPane.add(rdbtnFuncionario);
 		
+		Ocupacao.add(rdbtnFuncionario);
 				
 		
 		//RadioButton Primeiro
@@ -223,6 +245,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnPrimeiro.setBounds(95, 249, 109, 23);
 		contentPane.add(rdbtnPrimeiro);
 		
+		Periodo.add(rdbtnPrimeiro);
+		
 						
 		
 		//RadioButton Segundo
@@ -230,6 +254,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnSegundo.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		rdbtnSegundo.setBounds(227, 249, 109, 23);
 		contentPane.add(rdbtnSegundo);
+		
+		Periodo.add(rdbtnSegundo);
 		
 		
 		
@@ -240,6 +266,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnTerceiro.setBounds(358, 249, 109, 23);
 		contentPane.add(rdbtnTerceiro);
 		
+		Periodo.add(rdbtnTerceiro);
+		
 		
 		
 		//RadioButton Liso
@@ -248,6 +276,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnLiso.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		rdbtnLiso.setBounds(24, 373, 109, 23);
 		contentPane.add(rdbtnLiso);
+		
+		Tipo_Cabelo.add(rdbtnLiso);
 		
 		
 		
@@ -258,6 +288,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnCacheado.setBounds(24, 420, 109, 23);
 		contentPane.add(rdbtnCacheado);
 		
+		Tipo_Cabelo.add(rdbtnCacheado);
+		
 		
 		
 		//RadioButton Ondulado
@@ -266,6 +298,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnOndulado.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		rdbtnOndulado.setBounds(24, 467, 109, 23);
 		contentPane.add(rdbtnOndulado);
+		
+		Tipo_Cabelo.add(rdbtnOndulado);
 		
 		
 		
@@ -276,6 +310,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnCastanho.setBounds(206, 373, 109, 23);
 		contentPane.add(rdbtnCastanho);
 		
+		Cor_Cabelo.add(rdbtnCastanho);
+		
 		
 		
 		//RadioButton Loiro
@@ -284,6 +320,10 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnLoiro.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		rdbtnLoiro.setBounds(206, 420, 109, 23);
 		contentPane.add(rdbtnLoiro);
+		
+		Cor_Cabelo.add(rdbtnLoiro);
+		
+		
 		
 		
 		
@@ -294,6 +334,7 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnVerde.setBounds(398, 373, 109, 23);
 		contentPane.add(rdbtnVerde);
 		
+		Cor_Olhos.add(rdbtnVerde);
 		
 		
 		//RadioButton  Olho Castanho
@@ -301,6 +342,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnOlhoCastanho.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		rdbtnOlhoCastanho.setBounds(398, 420, 109, 23);
 		contentPane.add(rdbtnOlhoCastanho);
+		
+		Cor_Olhos.add(rdbtnOlhoCastanho);
 		
 		
 		
@@ -310,6 +353,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnCareca.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		rdbtnCareca.setBounds(24, 511, 109, 23);
 		contentPane.add(rdbtnCareca);
+		
+		Tipo_Cabelo.add(rdbtnCareca);
 		
 		
 		
@@ -321,6 +366,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnAzul.setBounds(398, 467, 109, 23);
 		contentPane.add(rdbtnAzul);
 		
+		Cor_Olhos.add(rdbtnAzul);
+		
 		
 		
 		//RadioButton Castanho Claro
@@ -329,6 +376,8 @@ public class Tela_Cadastro extends JFrame {
 		rdbtnCastanhoClaro.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		rdbtnCastanhoClaro.setBounds(206, 469, 109, 23);
 		contentPane.add(rdbtnCastanhoClaro);
+		
+		Cor_Cabelo.add(rdbtnCastanhoClaro);
 		
 		
 		
